@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lampada {
+            background-color: transparent;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lampada img {
+            text-align: center;
+        }
+        
+        .shadow {
+            background-color: rgba(0, 0, 0, 0.459);
+        }
+    </style>
+</head>
+
+<body>
+    <div class='lampada'>
+        <img src="./_imagens/lampada-apagada.jpg" alt="" id="lampada" onmouseout="apagaLampada()" onmousemove="acendeLampada()" onclick="quebraLampada()">
+    </div>
+
+    <script>
+        function acendeLampada() {
+            document.getElementById('lampada').src = "./_imagens/lampada-acesa.jpg";
+            // document.body.classList.add('shadow');
+        }
+
+        function apagaLampada() {
+            document.getElementById('lampada').src = "./_imagens/lampada-apagada.jpg";
+        }
+
+        function quebraLampada() {
+            document.getElementById('lampada').src = "./_imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</body>
+
+</html>
