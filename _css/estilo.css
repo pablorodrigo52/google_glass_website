@@ -245,3 +245,11 @@ footer#rodape {
 footer#rodape p {
     text-align: center;
 }
+
+video#novo {
+    display: block;
+    width: inherit;
+}
+video#making {
+    width: 500px;
+}
